@@ -36,8 +36,10 @@ var T_TYPE_HTTP            = 0,
     DEFAULT_HOST           = "localhost",
     DEFAULT_TYPE           = T_TYPE_HTTP;
 
-var default_rule = util.freshRequire('./rule_default');
-var requestHandler = util.freshRequire('./requestHandler');
+
+var requestHandler = require('./lib/requestHandler')
+// var default_rule = util.freshRequire('./rule_default');
+// var requestHandler = util.freshRequire('./requestHandler');
 
 //option
 //option.type     : 'http'(default) or 'https'
